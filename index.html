@@ -11,238 +11,243 @@
   <title>Frontend Mentor | Hotel booking confirmation page</title>
 </head>
 <body>
-  <header class="header">
-    <img src="assets/images/logo.svg" alt="">
-    <button class="header__btn">
-      <img src="assets/images/icon-menu.svg" alt="Open menu" class="header__img">
-    </button>
-  </header>
+  <div class="grid">
+    <header class="header">
+      <img src="assets/images/logo.svg" alt="">
+      <button class="header__btn">
+        <img src="assets/images/icon-menu.svg" alt="Open menu" class="header__img">
+      </button>
+    </header>
 
-  <!-- Sidebar starts -->
-  <aside class="sidebar">
-    <!-- Guest navigation -->
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a href="#" class="menu__link" data-state="current">
-            <span class="menu__link-wrapper"><img src="assets/images/icon-bed.svg" alt="">Your stay</span>
-            <span class="menu__marker">1</span></a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">
-            <span class="menu__link-wrapper"><img src="assets/images/icon-house.svg" alt="">The house</span>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">
-            <span class="menu__link-wrapper"><img src="assets/images/icon-pin.svg" alt="">Around town</span>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">
-            <span class="menu__link-wrapper"><img src="assets/images/icon-breakfast-outline.svg" alt="">Breakfast</span>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">
-            <span class="menu__link-wrapper"><img src="assets/images/icon-mail.svg" alt="">Messages</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <!-- Local weather -->
-    <section class="to-bottom">
-      <div class="weather">
-        <p class="weather__today tiny upper">Today in Cassis</p>
-        <p class="weather__weather">27°</p>
-        <p>Sunny · light breeze</p>
-        <img src="assets/images/icon-weather.svg" alt="" class="weather__sun">
-      </div>
-      <div class="sidebar__footer">
-        <p class="text-muted upper">Est. 1987</p>
-        <p class="text-muted upper">Maison Soleil · 12 Rue des Oliviers · Cassis</p>
-        <p class="text-muted upper">© 2026 Maison Soleil</p>
-      </div>
-    </section>
-  </aside>
-  <!-- Sidebar ends -->
-
-  <!-- Main content starts -->
-  <main class="main">
-    <section class="booking container">
-      <div class="booking__header">
-        <p class="text-muted small upper booking__confirmed">Booking · Confirmed</p>
-        <h1 class="booking__title">Bienvenue, <em class="booking__strong">Lucia.</em></h1>
-      </div>
-      <div class="booking__buttons">
-        <button class="btn" data-variant="primary">Print receipt</button>
-        <button class="btn" data-variant="secondary">Add to calendar</button>
-      </div>
-    </section>
-    <!-- Booking cards start -->
-    <section class="booking-cards container">
-      <span class="[ booking-cards__fan ] [ tiny upper text-muted ]" aria-hidden="hidden">Hover to fan</span>
-      <img src="assets/images/illustration-sun.svg" alt="" class="booking-cards__ilustration">
-      <!-- Host card -->
-      <article class="booking-cards__card card note">
-        <header class="note__header">
-          <p class="tiny upper">WELCOME CARD</p>
-          <img src="assets/images/icon-sun.svg" alt="" class="note__icon">
-        </header>
-        <section class="note__content">
-          <h2 class="note__title">
-            <span class="note__host d-block">A note from your host,</span>
-            <strong class="note__strong d-block">Margaux.</strong>
-          </h2>
-          <p class="note__description">
-            We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending
-            not to notice you.
-          </p>
-        </section>
-        <footer>
-          <p class="[ note__room ] [ tiny upper ]">Room</p>
-          <p class="note__end-text">La Garrigue</p>
-        </footer>
-      </article>
-      <!-- Receipt card -->
-      <article class="booking-cards__card card ticket">
-        <header class="ticket__header">
-          <div class="ticket__title-container">
-            <span class="text-muted tiny upper">Receipt</span>
-            <h2 class="ticket__title">Your stay</h2>
-          </div>
-          <code class="ticket__code">
-            <span class="text-muted tiny d-block">№ MS-2026</span>
-            <span class="text-muted tiny d-block">0421-AH</span>
-          </code>
-        </header>
-        <section class="ticket__checks">
-          <div class="ticket__check">
-            <h3 class="[ ticket__check-title ] [ text-muted tiny upper ]">CHECK IN</h3>
-            <p>
-              <time datetime="" class="ticket__date">
-                <strong class="ticket__month d-block">25 Apr</strong>
-                <span class="d-block">Saturday · 15:00</span>
-              </time>
-            </p>
-          </div>
-          <div class="ticket__check">
-            <h3 class="[ ticket__check-title ] [ text-muted tiny upper ]">CHECK OUT</h3>
-            <p>
-              <time datetime="2026-04-29T11:00" class="ticket__date">
-                <strong class="ticket__month d-block">29 Apr</strong>
-                <span class="d-block">Wednesday · 11:00</span>
-              </time>
-            </p>
-          </div>
-        </section>
-        <ul class="ticket__list">
-          <li class="ticket__item">
-            <p>Room · La Garrigue · 4 nights</p>
-            <p class="ticket__price small">€ 620.00</p>
+    <!-- Sidebar starts -->
+    <aside class="sidebar">
+      <!-- Guest navigation -->
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link" data-state="current">
+              <span class="menu__link-wrapper"><img src="assets/images/icon-bed.svg" alt="">Your stay</span>
+              <span class="menu__marker">1</span></a>
           </li>
-          <li class="ticket__item">
-            <p>Breakfast · 2 guests</p>
-            <p class="ticket__price small">€ 96.00</p>
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              <span class="menu__link-wrapper"><img src="assets/images/icon-house.svg" alt="">The house</span>
+            </a>
           </li>
-          <li class="ticket__item">
-            <p>Tourist tax</p>
-            <p class="ticket__price small">€ 14.40</p>
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              <span class="menu__link-wrapper"><img src="assets/images/icon-pin.svg" alt="">Around town</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              <span class="menu__link-wrapper"><img src="assets/images/icon-breakfast-outline.svg"
+                  alt="">Breakfast</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              <span class="menu__link-wrapper"><img src="assets/images/icon-mail.svg" alt="">Messages</span>
+            </a>
           </li>
         </ul>
-        <footer class="ticket__footer">
-          <div class="ticket__item">
-            <p class="text-muted small upper">
-              Total paid
+      </nav>
+      <!-- Local weather -->
+      <section class="to-bottom">
+        <div class="weather">
+          <p class="weather__today tiny upper">Today in Cassis</p>
+          <p class="weather__weather">27°</p>
+          <p>Sunny · light breeze</p>
+          <img src="assets/images/icon-weather.svg" alt="" class="weather__sun">
+        </div>
+        <div class="sidebar__footer">
+          <p class="text-muted upper">Est. 1987</p>
+          <p class="text-muted upper">Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+          <p class="text-muted upper">© 2026 Maison Soleil</p>
+        </div>
+      </section>
+    </aside>
+    <!-- Sidebar ends -->
+
+    <!-- Main content starts -->
+    <main class="main">
+      <section class="booking container">
+        <div class="booking__header">
+          <p class="text-muted small upper booking__confirmed">Booking · Confirmed</p>
+          <h1 class="booking__title">Bienvenue, <em class="booking__strong">Lucia.</em></h1>
+        </div>
+        <div class="booking__buttons">
+          <button class="btn" data-variant="primary">Print receipt</button>
+          <button class="btn" data-variant="secondary">Add to calendar</button>
+        </div>
+      </section>
+      <!-- Booking cards start -->
+      <section class="booking-cards container">
+        <span class="[ booking-cards__fan ] [ tiny upper text-muted ]" aria-hidden="hidden">Hover to fan</span>
+        <img src="assets/images/illustration-sun.svg" alt="" class="booking-cards__ilustration">
+        <!-- Host card -->
+        <article class="booking-cards__card card note">
+          <header class="note__header">
+            <p class="tiny upper">WELCOME CARD</p>
+            <img src="assets/images/icon-sun.svg" alt="" class="note__icon">
+          </header>
+          <section class="note__content">
+            <h2 class="note__title">
+              <span class="note__host d-block">A note from your host,</span>
+              <strong class="note__strong d-block">Margaux.</strong>
+            </h2>
+            <p class="note__description">
+              We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre -
+              pretending
+              not to notice you.
             </p>
-            <p class="ticket__total">
-              € 730.40
+          </section>
+          <footer>
+            <p class="[ note__room ] [ tiny upper ]">Room</p>
+            <p class="note__end-text">La Garrigue</p>
+          </footer>
+        </article>
+        <!-- Receipt card -->
+        <article class="booking-cards__card card ticket">
+          <header class="ticket__header">
+            <div class="ticket__title-container">
+              <span class="text-muted tiny upper">Receipt</span>
+              <h2 class="ticket__title">Your stay</h2>
+            </div>
+            <code class="ticket__code">
+              <span class="text-muted tiny d-block">№ MS-2026</span>
+              <span class="text-muted tiny d-block">0421-AH</span>
+            </code>
+          </header>
+          <section class="ticket__checks">
+            <div class="ticket__check">
+              <h3 class="[ ticket__check-title ] [ text-muted tiny upper ]">CHECK IN</h3>
+              <p>
+                <time datetime="" class="ticket__date">
+                  <strong class="ticket__month d-block">25 Apr</strong>
+                  <span class="d-block">Saturday · 15:00</span>
+                </time>
+              </p>
+            </div>
+            <div class="ticket__check">
+              <h3 class="[ ticket__check-title ] [ text-muted tiny upper ]">CHECK OUT</h3>
+              <p>
+                <time datetime="2026-04-29T11:00" class="ticket__date">
+                  <strong class="ticket__month d-block">29 Apr</strong>
+                  <span class="d-block">Wednesday · 11:00</span>
+                </time>
+              </p>
+            </div>
+          </section>
+          <ul class="ticket__list">
+            <li class="ticket__item">
+              <p>Room · La Garrigue · 4 nights</p>
+              <p class="ticket__price small">€ 620.00</p>
+            </li>
+            <li class="ticket__item">
+              <p>Breakfast · 2 guests</p>
+              <p class="ticket__price small">€ 96.00</p>
+            </li>
+            <li class="ticket__item">
+              <p>Tourist tax</p>
+              <p class="ticket__price small">€ 14.40</p>
+            </li>
+          </ul>
+          <footer class="ticket__footer">
+            <div class="ticket__item">
+              <p class="text-muted small upper">
+                Total paid
+              </p>
+              <p class="ticket__total">
+                € 730.40
+              </p>
+            </div>
+            <div class="ticket__item">
+              <p class="text-muted tiny upper">Paid · Wise · GBP</p>
+              <img src="assets/images/icon-barcode.svg" alt="Barcode for payment">
+            </div>
+          </footer>
+        </article>
+      </section>
+      <!-- Booking cards end -->
+      <!-- Guest info row starts -->
+      <section class="info-cards container">
+        <!-- Arrival -->
+        <article class="card info" data-variant="arrival">
+          <header class="info__header">
+            <div class="info__theme-container">
+              <div class="info__badge">
+                <img src="assets/images/icon-key.svg" alt="">
+              </div>
+              <span class="[ info__theme ] [ small upper ]">Arrival</span>
+            </div>
+            <span class="info__number">01</span>
+          </header>
+          <section class="info__content">
+            <h2 class="info__title">Check-in from 15:00</h2>
+            <p class="[ info__subtitle ] [ text-muted tiny ]">
+              <time datetime="">Sat, 25 April</time>
             </p>
-          </div>
-          <div class="ticket__item">
-            <p class="text-muted tiny upper">Paid · Wise · GBP</p>
-            <img src="assets/images/icon-barcode.svg" alt="Barcode for payment">
-          </div>
-        </footer>
-      </article>
-    </section>
-    <!-- Booking cards end -->
-    <!-- Guest info row starts -->
-    <section class="info-cards container">
-      <!-- Arrival -->
-      <article class="card info" data-variant="arrival">
-        <header class="info__header">
-          <div class="info__theme-container">
-            <div class="info__badge">
-              <img src="assets/images/icon-key.svg" alt="">
+            <p class="info__description">
+              Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the
+              olive
+              tree.
+            </p>
+          </section>
+        </article>
+        <!-- Wifi -->
+        <article class="card info" data-variant="wifi">
+          <header class="info__header">
+            <div class="info__theme-container">
+              <div class="info__badge">
+                <img src="assets/images/icon-wifi.svg" alt="">
+              </div>
+              <span class="[ info__theme ] [ small upper ]">Wifi</span>
             </div>
-            <span class="[ info__theme ] [ small upper ]">Arrival</span>
-          </div>
-          <span class="info__number">01</span>
-        </header>
-        <section class="info__content">
-          <h2 class="info__title">Check-in from 15:00</h2>
-          <p class="[ info__subtitle ] [ text-muted tiny ]">
-            <time datetime="">Sat, 25 April</time>
-          </p>
-          <p class="info__description">
-            Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive
-            tree.
-          </p>
-        </section>
-      </article>
-      <!-- Wifi -->
-      <article class="card info" data-variant="wifi">
-        <header class="info__header">
-          <div class="info__theme-container">
-            <div class="info__badge">
-              <img src="assets/images/icon-wifi.svg" alt="">
-            </div>
-            <span class="[ info__theme ] [ small upper ]">Wifi</span>
-          </div>
-          <span class="info__number">02</span>
-        </header>
-        <section class="info__content">
-          <h2 class="info__title">Le Soleil · Guest</h2>
-          <p class="[ info__subtitle ] [ text-muted tiny ]">Password below</p>
-          <div class="info__rows">
-            <div class="info__row">
-              <p class="text-muted tiny upper">Network</p>
-              <p class="small">Le Soleil · Guest</p>
-            </div>
-            <div class="info__row">
-              <p class="text-muted tiny upper">Password</p>
-              <div class="info__password">
-                <p class="small">soleil-2026</p>
-                <button class="[ btn ] [ text-muted upper ]" data-variant="compact">COPY</button>
+            <span class="info__number">02</span>
+          </header>
+          <section class="info__content">
+            <h2 class="info__title">Le Soleil · Guest</h2>
+            <p class="[ info__subtitle ] [ text-muted tiny ]">Password below</p>
+            <div class="info__rows">
+              <div class="info__row">
+                <p class="text-muted tiny upper">Network</p>
+                <p class="small">Le Soleil · Guest</p>
+              </div>
+              <div class="info__row">
+                <p class="text-muted tiny upper">Password</p>
+                <div class="info__password">
+                  <p class="small">soleil-2026</p>
+                  <button class="[ btn ] [ text-muted upper ]" data-variant="compact">COPY</button>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-      </article>
-      <!-- Breakfast -->
-      <article class="card info" data-variant="breakfast">
-        <header class="info__header">
-          <div class="info__theme-container">
-            <div class="info__badge">
-              <img src="assets/images/icon-breakfast.svg" alt="">
+          </section>
+        </article>
+        <!-- Breakfast -->
+        <article class="card info" data-variant="breakfast">
+          <header class="info__header">
+            <div class="info__theme-container">
+              <div class="info__badge">
+                <img src="assets/images/icon-breakfast.svg" alt="">
+              </div>
+              <span class="[ info__theme ] [ small upper ]">Breakfast</span>
             </div>
-            <span class="[ info__theme ] [ small upper ]">Breakfast</span>
-          </div>
-          <span class="info__number">03</span>
-        </header>
-        <section>
-          <h2 class="info__title">Served 8 - 10:30</h2>
-          <p class="[ info__subtitle ] [ text-muted tiny ]">On the terrace</p>
-          <p class="info__description">
-            Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night
-            before.
-          </p>
-        </section>
-      </article>
-    </section>
-    <!-- Guest info row ends -->
-  </main>
-  <!-- Main content ends -->
+            <span class="info__number">03</span>
+          </header>
+          <section>
+            <h2 class="info__title">Served 8 - 10:30</h2>
+            <p class="[ info__subtitle ] [ text-muted tiny ]">On the terrace</p>
+            <p class="info__description">
+              Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night
+              before.
+            </p>
+          </section>
+        </article>
+      </section>
+      <!-- Guest info row ends -->
+    </main>
+    <!-- Main content ends -->
+  </div>
 </body>
 </html>
