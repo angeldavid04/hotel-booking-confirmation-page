@@ -13,8 +13,8 @@
 <body>
   <header class="header">
     <img src="assets/images/logo.svg" alt="">
-    <button>
-      <img src="assets/images/icon-menu.svg" alt="Open menu">
+    <button class="header__btn">
+      <img src="assets/images/icon-menu.svg" alt="Open menu" class="header__img">
     </button>
   </header>
 
@@ -24,34 +24,44 @@
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__item">
-          <a href="#" class="menu__link">Your stay <span class="menu__marker">1</span></a>
+          <a href="#" class="menu__link" data-state="current">
+            <span class="menu__link-wrapper"><img src="assets/images/icon-bed.svg" alt="">Your stay</span>
+            <span class="menu__marker">1</span></a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">The house</a>
+          <a href="#" class="menu__link">
+            <span class="menu__link-wrapper"><img src="assets/images/icon-house.svg" alt="">The house</span>
+          </a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link"> Around town</a>
+          <a href="#" class="menu__link">
+            <span class="menu__link-wrapper"><img src="assets/images/icon-pin.svg" alt="">Around town</span>
+          </a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Breakfast</a>
+          <a href="#" class="menu__link">
+            <span class="menu__link-wrapper"><img src="assets/images/icon-breakfast-outline.svg" alt="">Breakfast</span>
+          </a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Messages</a>
+          <a href="#" class="menu__link">
+            <span class="menu__link-wrapper"><img src="assets/images/icon-mail.svg" alt="">Messages</span>
+          </a>
         </li>
       </ul>
     </nav>
-    <section>
-      <!-- Local weather -->
+    <!-- Local weather -->
+    <section class="to-bottom">
       <div class="weather">
-        <p>Today in Cassis</p>
-        <p>27°</p>
+        <p class="weather__today tiny upper">Today in Cassis</p>
+        <p class="weather__weather">27°</p>
         <p>Sunny · light breeze</p>
-        <img src="assets/images/icon-weather.svg" alt="">
+        <img src="assets/images/icon-weather.svg" alt="" class="weather__sun">
       </div>
       <div class="sidebar__footer">
-        <p class="sidebar__text-end">Est. 1987</p>
-        <p class="sidebar__text-end">Maison Soleil · 12 Rue des Oliviers · Cassis</p>
-        <p class="sidebar__text-end">© 2026 Maison Soleil</p>
+        <p class="text-muted upper">Est. 1987</p>
+        <p class="text-muted upper">Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+        <p class="text-muted upper">© 2026 Maison Soleil</p>
       </div>
     </section>
   </aside>
@@ -60,33 +70,35 @@
   <!-- Main content starts -->
   <main class="main">
     <section class="booking">
-      <p class="text-muted small upper">Booking · Confirmed</p>
-      <h1 class="booking__title">Bienvenue, Lucia.</h1>
-      <div>
-        <button class="btn btn--primary">Print receipt</button>
-        <button class="btn btn--secondary">Add to calendar</button>
+      <div class="booking__header">
+        <p class="text-muted small upper booking__confirmed">Booking · Confirmed</p>
+        <h1 class="booking__title">Bienvenue, <em class="booking__strong">Lucia.</em></h1>
+      </div>
+      <div class="booking__buttons">
+        <button class="btn" data-variant="primary">Print receipt</button>
+        <button class="btn" data-variant="secondary">Add to calendar</button>
       </div>
     </section>
     <!-- Booking cards start -->
-    <section>
+    <section class="booking-cards">
       <!-- Host card -->
       <article class="card note">
         <header class="note__header">
-          <h2 class="text-muted tiny upper">WELCOME CARD</h2>
+          <p class="tiny upper">WELCOME CARD</p>
           <img src="assets/images/icon-sun.svg" alt="" class="note__icon">
         </header>
         <section class="note__content">
-          <h3 class="note__host">
-            <span>A note from your host,</span>
-            <span>Margaux.</span>
-          </h3>
-          <p class="note">
+          <h2 class="note__title">
+            <span class="note__host d-block">A note from your host,</span>
+            <strong class="note__strong d-block">Margaux.</strong>
+          </h2>
+          <p class="note__description">
             We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending
             not to notice you.
           </p>
         </section>
         <footer>
-          <h3 class="text-muted tiny upper">Room</h3>
+          <p class="[ note__room ] [ tiny upper ]">Room</p>
           <p class="note__end-text">La Garrigue</p>
         </footer>
       </article>
@@ -97,27 +109,27 @@
             <span class="text-muted tiny upper">Receipt</span>
             <h2 class="ticket__title">Your stay</h2>
           </div>
-          <code class="ticket__code-container">
-            <span class="text-muted tiny">№ MS-2026</span>
-            <span class="text-muted tiny">0421-AH</span>
+          <code class="ticket__code">
+            <span class="text-muted tiny d-block">№ MS-2026</span>
+            <span class="text-muted tiny d-block">0421-AH</span>
           </code>
         </header>
         <section class="ticket__checks">
           <div class="ticket__check">
-            <h3 class="text-muted tiny upper">CHECK IN</h3>
+            <h3 class="[ ticket__check-title ] [ text-muted tiny upper ]">CHECK IN</h3>
             <p>
               <time datetime="" class="ticket__date">
-                <strong class="ticket__month">25 Apr</strong>
-                <span class="ticket__day">Saturday · 15:00</span>
+                <strong class="ticket__month d-block">25 Apr</strong>
+                <span class="d-block">Saturday · 15:00</span>
               </time>
             </p>
           </div>
           <div class="ticket__check">
-            <h3 class="text-muted tiny upper">CHECK OUT</h3>
+            <h3 class="[ ticket__check-title ] [ text-muted tiny upper ]">CHECK OUT</h3>
             <p>
-              <time datetime="" class="ticket__date">
-                <strong class="ticket__month">29 Apr</strong>
-                <span class="ticket__day">Wednesday · 11:00</span>
+              <time datetime="2026-04-29T11:00" class="ticket__date">
+                <strong class="ticket__month d-block">29 Apr</strong>
+                <span class="d-block">Wednesday · 11:00</span>
               </time>
             </p>
           </div>
@@ -125,46 +137,50 @@
         <ul class="ticket__list">
           <li class="ticket__item">
             <p>Room · La Garrigue · 4 nights</p>
-            <p>€ 620.00</p>
+            <p class="ticket__price small">€ 620.00</p>
           </li>
           <li class="ticket__item">
             <p>Breakfast · 2 guests</p>
-            <p>€ 96.00</p>
+            <p class="ticket__price small">€ 96.00</p>
           </li>
           <li class="ticket__item">
             <p>Tourist tax</p>
-            <p>€ 14.40</p>
+            <p class="ticket__price small">€ 14.40</p>
           </li>
         </ul>
         <footer class="ticket__footer">
-          <p class="text-muted small upper">
-            Total paid
-          </p>
-          <p class="ticket__total">
-            € 730.40
-          </p>
-          <p class="text-muted tiny upper">Paid · Wise · GBP</p>
-          <img src="assets/images/icon-barcode.svg" alt="Barcode for payment">
+          <div class="ticket__item">
+            <p class="text-muted small upper">
+              Total paid
+            </p>
+            <p class="ticket__total">
+              € 730.40
+            </p>
+          </div>
+          <div class="ticket__item">
+            <p class="text-muted tiny upper">Paid · Wise · GBP</p>
+            <img src="assets/images/icon-barcode.svg" alt="Barcode for payment">
+          </div>
         </footer>
       </article>
     </section>
     <!-- Booking cards end -->
     <!-- Guest info row starts -->
-    <section class="flex info-cards">
+    <section class="info-cards">
       <!-- Arrival -->
-      <article class="card info">
+      <article class="card info" data-variant="arrival">
         <header class="info__header">
-          <div class="info__title-container">
-            <span class="info__badge">
+          <div class="info__theme-container">
+            <div class="info__badge">
               <img src="assets/images/icon-key.svg" alt="">
-            </span>
-            <span class="info__theme">Arrival</span>
+            </div>
+            <span class="[ info__theme ] [ small upper ]">Arrival</span>
           </div>
           <span class="info__number">01</span>
         </header>
         <section class="info__content">
           <h2 class="info__title">Check-in from 15:00</h2>
-          <p class="text-muted tiny">
+          <p class="[ info__subtitle ] [ text-muted tiny ]">
             <time datetime="">Sat, 25 April</time>
           </p>
           <p class="info__description">
@@ -174,48 +190,48 @@
         </section>
       </article>
       <!-- Wifi -->
-      <article class="card info-">
+      <article class="card info" data-variant="wifi">
         <header class="info__header">
-          <div class="info__title-container">
-            <span class="info__badge">
+          <div class="info__theme-container">
+            <div class="info__badge">
               <img src="assets/images/icon-wifi.svg" alt="">
-            </span>
-            <span class="info__theme">Wifi</span>
+            </div>
+            <span class="[ info__theme ] [ small upper ]">Wifi</span>
           </div>
           <span class="info__number">02</span>
         </header>
         <section class="info__content">
           <h2 class="info__title">Le Soleil · Guest</h2>
-          <p class="text-muted tiny">Password below</p>
+          <p class="[ info__subtitle ] [ text-muted tiny ]">Password below</p>
           <div class="info__rows">
             <div class="info__row">
-              <p>Network</p>
-              <p>Le Soleil · Guest</p>
+              <p class="text-muted tiny upper">Network</p>
+              <p class="small">Le Soleil · Guest</p>
             </div>
             <div class="info__row">
-              <p>Password</p>
-              <div class="info__row-container">
-                <p>soleil-2026</p>
-                <button class="text-muted tiny upper">COPY</button>
+              <p class="text-muted tiny upper">Password</p>
+              <div class="info__password">
+                <p class="small">soleil-2026</p>
+                <button class="[ btn ] [ text-muted upper ]" data-variant="compact">COPY</button>
               </div>
             </div>
           </div>
         </section>
       </article>
       <!-- Breakfast -->
-      <article class="card info">
+      <article class="card info" data-variant="breakfast">
         <header class="info__header">
-          <div class="info__title-container">
-            <span class="info__badge">
+          <div class="info__theme-container">
+            <div class="info__badge">
               <img src="assets/images/icon-breakfast.svg" alt="">
-            </span>
-            <span class="info__theme">Breakfast</span>
+            </div>
+            <span class="[ info__theme ] [ small upper ]">Breakfast</span>
           </div>
           <span class="info__number">03</span>
         </header>
         <section>
           <h2 class="info__title">Served 8 - 10:30</h2>
-          <p class="text-muted tiny">On the terrace</p>
+          <p class="[ info__subtitle ] [ text-muted tiny ]">On the terrace</p>
           <p class="info__description">
             Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night
             before.
