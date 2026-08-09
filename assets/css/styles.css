@@ -250,11 +250,11 @@ body {
   transition: translate 0.3s ease-out;
 }
 
-.sidebar--active {
+.sidebar[data-state="active"] {
   translate: 0 0;
 }
 
-body:has(.sidebar--active) {
+body:has(.sidebar[data-state="active"]) {
   overflow: hidden;
 }
 
