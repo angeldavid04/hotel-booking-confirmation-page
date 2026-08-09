@@ -69,7 +69,7 @@
 
   <!-- Main content starts -->
   <main class="main">
-    <section class="booking">
+    <section class="booking container">
       <div class="booking__header">
         <p class="text-muted small upper booking__confirmed">Booking · Confirmed</p>
         <h1 class="booking__title">Bienvenue, <em class="booking__strong">Lucia.</em></h1>
@@ -80,9 +80,11 @@
       </div>
     </section>
     <!-- Booking cards start -->
-    <section class="booking-cards">
+    <section class="booking-cards container">
+      <span class="[ booking-cards__fan ] [ tiny upper text-muted ]" aria-hidden="hidden">Hover to fan</span>
+      <img src="assets/images/illustration-sun.svg" alt="" class="booking-cards__ilustration">
       <!-- Host card -->
-      <article class="card note">
+      <article class="booking-cards__card card note">
         <header class="note__header">
           <p class="tiny upper">WELCOME CARD</p>
           <img src="assets/images/icon-sun.svg" alt="" class="note__icon">
@@ -103,7 +105,7 @@
         </footer>
       </article>
       <!-- Receipt card -->
-      <article class="card ticket">
+      <article class="booking-cards__card card ticket">
         <header class="ticket__header">
           <div class="ticket__title-container">
             <span class="text-muted tiny upper">Receipt</span>
@@ -166,7 +168,7 @@
     </section>
     <!-- Booking cards end -->
     <!-- Guest info row starts -->
-    <section class="info-cards">
+    <section class="info-cards container">
       <!-- Arrival -->
       <article class="card info" data-variant="arrival">
         <header class="info__header">
