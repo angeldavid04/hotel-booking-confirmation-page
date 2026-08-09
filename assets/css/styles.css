@@ -386,6 +386,7 @@ body:has(.sidebar--active) {
   rotate: 2deg;
   box-shadow: color-mix(in srgb, var(--terracotta400) 80%, transparent) 0px 0px
     18px;
+  z-index: 2;
 }
 
 .note::before {
