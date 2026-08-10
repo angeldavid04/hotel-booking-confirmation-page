@@ -33,8 +33,8 @@ Los usuarios deberían poder:
 
 ### Enlaces
 
-- URL de la solución: https://github.com/angeldavid04/mortgage-repayment-calculator
-- URL del sitio en vivo: https://angeldavid04.github.io/mortgage-repayment-calculator
+- URL de la solución:
+- URL del sitio en vivo:
 
 ## 💪 Mi proceso
 
@@ -48,19 +48,21 @@ Los usuarios deberían poder:
 
 ### Lo que aprendí
 
-Aprendí a
+Aprendí a como utilizar el atributo inert en el html para ocultar elementos del teclado y herramientas como lectores de pantalla.
+Aprendí a como copiar texto desde JavaScript utilizando la API clipboard del navegador.
+Descubrí una forma de alertar a las herramientas de accesibilidad sobre un cambio, utilizando el `role="status"`
 
 ### Desarrollo continuo
 
-Espero poder seguir aprendiendo más aspectos sobre HTML, CSS Y JavaScript. Igualmente me gustaría mejorar mi forma de maquetación en general.
+Espero poder seguir aprendiendo más sobre el desarrollo web.
 
 ### Recursos útiles
 
 - [MDN Web Docs](https://developer.mozilla.org/es/) - Este recurso es muy bueno y me ayuda sobre todo a escoger funciones y características que funcionan en cualquier navegador.
 - [W3Schools](https://www.w3schools.com/cssref/pr_gen_quotes.php) - Este recurso me ayuda a entender las propiedades CSS cuando tengo dudas.
 - [CSS Scan - CSS box shadow examples](https://getcssscan.com/css-box-shadow-examples) - Este recurso me ayuda a escoger sombras para elementos.
-- [CSS Tricks](https://css-tricks.com/) -
+- [CSS Tricks](https://css-tricks.com/) - Muy buen recurso para aprender trucos útiles de maquetado.
 
 ## 🤓 Autor
 
-- Frontend Mentor - [Angel López](https://www.frontendmentor.io/profile/AngelDavid-dev)
+- Frontend Mentor - [Angel López](https://www.frontendmentor.io/profile/angeldavid04)
