@@ -416,7 +416,7 @@ body {
 .booking-cards__ilustration {
   position: absolute;
   width: fit-content;
-  top: 25%;
+  top: 35%;
   opacity: 0;
   visibility: hidden;
   transition:
