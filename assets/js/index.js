@@ -53,5 +53,19 @@ function showToast(message) {
   }, 2000);
 }
 
+function removeHidden() {
+  const desktopQuery = "(width >= 68rem)";
+
+  if (window.matchMedia(desktopQuery).matches) {
+    $menuBtn.removeAttribute("aria-expanded");
+    $menu.removeAttribute("aria-hidden");
+    return;
+  }
+
+  $menuBtn.setAttribute("aria-expanded", "false");
+  $menu.setAttribute("aria-hidden", "true");
+}
+
 $menuBtn.addEventListener("click", toggleMenu);
 $passwordBtn.addEventListener("click", copyPassword);
+window.addEventListener("resize", removeHidden);
