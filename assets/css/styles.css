@@ -82,6 +82,10 @@
   --blue500: hsl(230deg, 49%, 56%);
   /* Rose */
   --rose500: hsl(340deg, 48%, 52%);
+  /* SHADOW */
+  --info-card-shadow:
+    hsla(0, 0%, 0%, 0.02) 0px 1px 3px 0px,
+    hsla(210deg, 13%, 12%, 0.15) 0px 0px 0px 1px;
 }
 
 /* ----- RESET ----- */
@@ -580,9 +584,7 @@ body {
 
 .info {
   --header-color: var(--neutral900); /* default */
-  box-shadow:
-    rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  box-shadow: var(--info-card-shadow);
   flex: 1;
   padding-block: 1rem;
   padding-inline: 1.25rem;
