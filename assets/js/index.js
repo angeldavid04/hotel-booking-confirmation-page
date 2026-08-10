@@ -53,7 +53,7 @@ function showToast(message) {
   }, 2000);
 }
 
-function removeHidden() {
+function cleanAria() {
   const desktopQuery = "(width >= 68rem)";
 
   if (window.matchMedia(desktopQuery).matches) {
@@ -68,4 +68,5 @@ function removeHidden() {
 
 $menuBtn.addEventListener("click", toggleMenu);
 $passwordBtn.addEventListener("click", copyPassword);
-window.addEventListener("resize", removeHidden);
+window.addEventListener("resize", cleanAria);
+document.addEventListener("DOMContentLoaded", cleanAria);
