@@ -698,6 +698,7 @@ body {
   visibility: visible;
 }
 
+/* ----- MEDIA QUERIES ----- */
 @media (width >= 42rem) {
   .booking-cards {
     flex-direction: row-reverse;
