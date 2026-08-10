@@ -1,113 +1,66 @@
-# Frontend Mentor - Hotel booking confirmation page
+# 💷 Frontend Mentor - Solución del reto Hotel booking confirmation page
 
-![Design preview for the Hotel booking confirmation page coding challenge](./preview.jpg)
+Esta es mi solución al reto [Hotel booking confirmation page de Frontend Mentor](https://www.frontendmentor.io/challenges/hotel-booking-confirmation-page).
 
-## Welcome! 👋
+## Tabla de contenidos
 
-Thanks for checking out this coding challenge.
+- [Resumen](#resumen)
+  - [El reto](#el-reto)
+  - [Captura de pantalla](#captura-de-pantalla)
+  - [Enlaces](#enlaces)
+- [Mi proceso](#mi-proceso)
+  - [Construido con](#construido-con)
+  - [Lo que aprendí](#lo-que-aprendí)
+  - [Desarrollo continuo](#desarrollo-continuo)
+  - [Recursos útiles](#recursos-útiles)
+- [Autor](#autor)
+- [Agradecimientos](#agradecimientos)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## 💻 Resumen
 
-**To do this challenge, you need a good understanding of HTML and CSS.** A little JavaScript is optional for the interactive touches, like opening the navigation menu and copying the Wi-Fi password.
+### El reto
 
-## The challenge
+Los usuarios deberían poder:
 
-Build a hotel booking confirmation page and get it looking as close to the design as possible.
+- Ver la disposición óptima de la interfaz según el tamaño de pantalla del dispositivo
+- Visualizar los estados _hover_ (al pasar el cursor) y _focus_ (al enfocar) de todos los elementos interactivos de la página
+- Abrir y cerrar el menú de navegación en pantallas más pequeñas (JavaScript opcional)
+- Copiar la contraseña de Wi-Fi al portapapeles mediante el botón de copiar (JavaScript opcional)
 
-The page pairs a branded sidebar with a stack of overlapping cards: a printed-style receipt, a warm note from the host, and a row of arrival, Wi-Fi, and breakfast details. The layered cards, the mix of serif, sans-serif, and monospace type, and the responsive behavior are where most of the work is.
+### Captura de pantalla
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+![](./preview.png)
 
-Your users should be able to:
+### Enlaces
 
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-- Open and close the navigation menu on smaller screens (optional JavaScript)
-- Copy the Wi-Fi password to their clipboard using the copy button (optional JavaScript)
+- URL de la solución: https://github.com/angeldavid04/mortgage-repayment-calculator
+- URL del sitio en vivo: https://angeldavid04.github.io/mortgage-repayment-calculator
 
-## Ideas to test yourself
+## 💪 Mi proceso
 
-The design gives you plenty to build. If you want to push further, here are some optional extensions to try:
+### Construido con
 
-- Add a working copy button so guests can copy the Wi-Fi password in one click
-- Make the sidebar navigation collapse into a toggleable menu on smaller screens
-- Animate the receipt and host-note cards so they fan out on hover
-- Wire up the "Print receipt" button to open a clean print view using the browser's print dialog
-- Generate an "Add to calendar" file from the stay dates so guests can save their booking
-- Load the booking details from a JSON file instead of hardcoding them
+- HTML5 semántico
+- JavaScript ES6+
+- Propiedades personalizadas de CSS
+- Grid
+- Flexbox
 
-## Getting started
+### Lo que aprendí
 
-### What's included
+Aprendí a
 
-Your task is to build out the project to the designs inside the `/design` folder. You'll find a mobile and a desktop version of the design, plus the open navigation menu and the hover and focus states.
+### Desarrollo continuo
 
-In your download:
+Espero poder seguir aprendiendo más aspectos sobre HTML, CSS Y JavaScript. Igualmente me gustaría mejorar mi forma de maquetación en general.
 
-- Mobile and desktop designs (JPG format)
-- All required assets in the `/assets` folder
-- Variable and static font files (or link to Google Fonts)
-- `style-guide.md` with colors, fonts, and other design specs
+### Recursos útiles
 
-**Want more accurate builds?** The designs are in JPG static format, which means you'll need to use your best judgment for styles such as `font-size`, `padding`, and `margin`. If you'd like the Figma design file to help build a more accurate solution faster, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+- [MDN Web Docs](https://developer.mozilla.org/es/) - Este recurso es muy bueno y me ayuda sobre todo a escoger funciones y características que funcionan en cualquier navegador.
+- [W3Schools](https://www.w3schools.com/cssref/pr_gen_quotes.php) - Este recurso me ayuda a entender las propiedades CSS cuando tengo dudas.
+- [CSS Scan - CSS box shadow examples](https://getcssscan.com/css-box-shadow-examples) - Este recurso me ayuda a escoger sombras para elementos.
+- [CSS Tricks](https://css-tricks.com/) -
 
-## Using AI coding assistants
+## 🤓 Autor
 
-We've included two files to help you if you're using AI coding assistants (like Claude, GitHub Copilot, Cursor, etc.) while working on this challenge:
-
-- `AGENTS.md` - Contains detailed instructions for AI assistants on how to help you with this challenge. It's tailored to this challenge's difficulty level, so the AI will provide guidance appropriate to your learning stage—offering more support for beginner challenges and encouraging more independence on advanced ones.
-- `CLAUDE.md` - A pointer file that directs Claude-based tools to the AGENTS.md instructions.
-
-**How to use them:** You don't need to do anything! These files are automatically detected by most AI coding tools. The AI will read them and adjust its behavior to be a better learning partner—guiding you toward solutions rather than just giving you the answers.
-
-**Note:** These files are designed to help you *learn*, not to do the work for you. The AI is instructed to ask questions, give hints, and explain concepts rather than writing complete solutions.
-
-## Building your project
-
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
-
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
-
-### Want some support on the challenge?
-
-[Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
-
-## Deploying your project
-
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
-
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://www.frontendmentor.io/guides/hosting-your-solution).
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://www.frontendmentor.io/guides/how-to-submit-solutions) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-**We strongly recommend overwriting this `README.md` with a custom one.** We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code. The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Submit it on the platform and share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community)
-2. Share on [X (formerly Twitter)](https://x.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in your post. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on [LinkedIn](https://www.linkedin.com/company/frontend-mentor/).
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-**This challenge is completely free. Please share it with anyone who will find it useful for practice.**
-
-**Have fun building!** 🚀
+- Frontend Mentor - [Angel López](https://www.frontendmentor.io/profile/AngelDavid-dev)

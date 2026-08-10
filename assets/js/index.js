@@ -22,7 +22,6 @@ function closeMenu() {
   $btnImage.setAttribute("src", BTN_ICONS.OPEN);
   $menu.setAttribute("data-state", UI_STATES.HIDDEN);
   $menuBtn.setAttribute("aria-expanded", "false");
-  $menu.setAttribute("aria-hidden", "true");
   $menu.setAttribute("inert", "");
 }
 
@@ -30,7 +29,6 @@ function openMenu() {
   $btnImage.setAttribute("src", BTN_ICONS.CLOSE);
   $menu.setAttribute("data-state", UI_STATES.ACTIVE);
   $menuBtn.setAttribute("aria-expanded", "true");
-  $menu.setAttribute("aria-hidden", "false");
   $menu.removeAttribute("inert");
 }
 
@@ -68,7 +66,6 @@ function cleanAria() {
   if (DESKTOP_QUERY.matches) {
     // Desktop
     $menuBtn.removeAttribute("aria-expanded");
-    $menu.removeAttribute("aria-hidden");
     $menu.removeAttribute("data-state");
     $menu.removeAttribute("inert");
     return;
