@@ -29,7 +29,7 @@ Los usuarios deberían poder:
 
 ### Captura de pantalla
 
-![](./preview.png)
+![Previsualización del sitio](./preview.png)
 
 ### Enlaces
 
