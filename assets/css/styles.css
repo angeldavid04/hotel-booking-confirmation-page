@@ -513,6 +513,7 @@ body {
 
 .ticket__code {
   text-align: right;
+  font-family: "DM Mono", sans-serif;
 }
 
 .ticket__checks {
