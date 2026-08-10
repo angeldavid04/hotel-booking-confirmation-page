@@ -50,7 +50,7 @@ async function copyPassword() {
   try {
     await navigator.clipboard.writeText(password);
     showToast(PASSWORD_MESSAGE);
-  } catch (err) {
+  } catch {
     showToast(PASSWORD_ERROR);
   }
 }
