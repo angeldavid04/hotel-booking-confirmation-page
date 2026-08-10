@@ -14,14 +14,18 @@ const BTN_ICONS = Object.freeze({
 });
 
 function toggleMenu() {
-  if ($menu.getAttribute("data-state") === MENU_STATES.ACTIVE) {
-    $menuBtn.setAttribute("aria-expanded", "false");
+  const isActive = $menu.getAttribute("data-state") === MENU_STATES.ACTIVE;
+
+  if (isActive) {
     $btnImage.setAttribute("src", BTN_ICONS.OPEN);
     $menu.setAttribute("data-state", MENU_STATES.HIDDEN);
+    $menuBtn.setAttribute("aria-expanded", "false");
+    $menu.setAttribute("aria-hidden", "true");
   } else {
-    $menuBtn.setAttribute("aria-expanded", "true");
     $btnImage.setAttribute("src", BTN_ICONS.CLOSE);
     $menu.setAttribute("data-state", MENU_STATES.ACTIVE);
+    $menuBtn.setAttribute("aria-expanded", "true");
+    $menu.setAttribute("aria-hidden", "false");
   }
 }
 
