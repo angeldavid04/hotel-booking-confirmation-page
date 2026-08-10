@@ -92,6 +92,9 @@
     0px 18px;
   --ticket-shadow: color-mix(in srgb, var(--neutral900) 10%, transparent) 0px
     0px 18px;
+  /* ANIMATIONS */
+  --anim-duration-normal: 0.3s;
+  --anim-duration-medium: 0.4s;
 }
 
 /* ----- RESET ----- */
@@ -170,7 +173,7 @@ body {
   border: 1px solid transparent;
   font-family: inherit;
   font-weight: 600;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color var(--anim-duration-normal) ease-in-out;
   width: 100%;
 }
 
@@ -263,7 +266,7 @@ body {
   right: 0;
   background-color: var(--neutral100);
   translate: -100% 0;
-  transition: translate 0.3s ease-out;
+  transition: translate var(--anim-duration-normal) ease-out;
 }
 
 .sidebar[data-state="active"] {
@@ -301,7 +304,7 @@ body {
   align-items: center;
   padding-block: 0.75rem;
   padding-inline: 1rem;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color var(--anim-duration-normal) ease-in-out;
 }
 
 .menu__link:is([data-state="current"], :hover) {
@@ -405,8 +408,8 @@ body {
 .booking-cards__card {
   max-width: 22rem;
   transition:
-    translate 0.3s ease-in-out,
-    rotate 0.3s ease-in-out;
+    translate var(--anim-duration-normal) ease-in-out,
+    rotate var(--anim-duration-normal) ease-in-out;
 }
 
 .booking-cards__fan {
@@ -430,9 +433,9 @@ body {
   opacity: 0;
   visibility: hidden;
   transition:
-    opacity 0.4s ease-in-out,
-    visibility 0.4s ease-in-out,
-    translate 0.4s ease-in-out;
+    opacity var(--anim-duration-medium) ease-in-out,
+    visibility var(--anim-duration-medium) ease-in-out,
+    translate var(--anim-duration-medium) ease-in-out;
 }
 /* ----- NOTE ----- */
 .note {
@@ -786,11 +789,8 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::after,
-  *::before {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
+  :root {
+    --anim-duration-normal: 0s;
+    --anim-duration-medium: 0s;
   }
 }
