@@ -84,7 +84,7 @@
   --rose500: hsl(340deg, 48%, 52%);
   /* SHADOW */
   --info-card-shadow:
-    hsla(0, 0%, 0%, 0.02) 0px 1px 3px 0px,
+    hsla(0deg, 0%, 0%, 0.02) 0px 1px 3px 0px,
     hsla(210deg, 13%, 12%, 0.15) 0px 0px 0px 1px;
 }
 
