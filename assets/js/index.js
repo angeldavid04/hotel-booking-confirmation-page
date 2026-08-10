@@ -17,19 +17,27 @@ const BTN_ICONS = Object.freeze({
   OPEN: "assets/images/icon-menu.svg"
 });
 
+function closeMenu() {
+  $btnImage.setAttribute("src", BTN_ICONS.OPEN);
+  $menu.setAttribute("data-state", MENU_STATES.HIDDEN);
+  $menuBtn.setAttribute("aria-expanded", "false");
+  $menu.setAttribute("aria-hidden", "true");
+}
+
+function openMenu() {
+  $btnImage.setAttribute("src", BTN_ICONS.CLOSE);
+  $menu.setAttribute("data-state", MENU_STATES.ACTIVE);
+  $menuBtn.setAttribute("aria-expanded", "true");
+  $menu.setAttribute("aria-hidden", "false");
+}
+
 function toggleMenu() {
   const isActive = $menu.getAttribute("data-state") === MENU_STATES.ACTIVE;
 
   if (isActive) {
-    $btnImage.setAttribute("src", BTN_ICONS.OPEN);
-    $menu.setAttribute("data-state", MENU_STATES.HIDDEN);
-    $menuBtn.setAttribute("aria-expanded", "false");
-    $menu.setAttribute("aria-hidden", "true");
+    closeMenu();
   } else {
-    $btnImage.setAttribute("src", BTN_ICONS.CLOSE);
-    $menu.setAttribute("data-state", MENU_STATES.ACTIVE);
-    $menuBtn.setAttribute("aria-expanded", "true");
-    $menu.setAttribute("aria-hidden", "false");
+    openMenu();
   }
 }
 
@@ -57,13 +65,17 @@ function cleanAria() {
   const desktopQuery = "(width >= 68rem)";
 
   if (window.matchMedia(desktopQuery).matches) {
+    // Desktop
     $menuBtn.removeAttribute("aria-expanded");
     $menu.removeAttribute("aria-hidden");
+    $menu.removeAttribute("data-state");
     return;
   }
 
+  // Mobile
   $menuBtn.setAttribute("aria-expanded", "false");
   $menu.setAttribute("aria-hidden", "true");
+  $menu.setAttribute("data-state", "hidden");
 }
 
 $menuBtn.addEventListener("click", toggleMenu);
