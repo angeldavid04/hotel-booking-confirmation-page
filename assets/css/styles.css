@@ -134,12 +134,13 @@ body {
 }
 
 .container {
-  padding-inline: 1rem;
+  padding-inline: clamp(1rem, 1vw + 0.5rem, 1.75rem);
   padding-block: 1.25rem;
 }
 
 .grid {
   display: grid;
+  align-items: start;
   grid-template-areas:
     "header"
     "main";
@@ -587,7 +588,7 @@ body:has(.sidebar[data-state="active"]) {
 
 /* ----- INFO CARDS ----- */
 .info-cards {
-  gap: 1rem;
+  gap: clamp(1rem, 1vw + 0.5rem, 2rem);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -689,13 +690,28 @@ body:has(.sidebar[data-state="active"]) {
   }
 }
 
-@media (width >= 48rem) {
+@media (width >= 42rem) {
   .booking-cards {
     flex-direction: row-reverse;
   }
 
   .booking-cards__fan {
     display: flex;
+  }
+}
+
+@media (width >= 68rem) {
+  .sidebar {
+    translate: 0;
+    max-width: 20rem;
+    position: fixed;
+  }
+
+  .grid {
+    grid-template-columns: 20rem 1fr;
+    grid-template-areas:
+      "header header"
+      "sidebar main";
   }
 
   .note,
