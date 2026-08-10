@@ -714,10 +714,20 @@ body {
 }
 
 @media (width >= 68rem) {
+  .header {
+    border-bottom: none;
+    border-right: 1px solid var(--neutral400);
+    background-image: linear-gradient(var(--neutral400), var(--neutral400));
+    background-size: 89.6875% 1px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
   .sidebar {
     translate: 0;
     max-width: 20rem;
     position: fixed;
+    border-right: 1px solid var(--neutral400);
   }
 
   .btn {
