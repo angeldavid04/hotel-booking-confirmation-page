@@ -698,16 +698,6 @@ body {
   visibility: visible;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::after,
-  *::before {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
-  }
-}
-
 @media (width >= 42rem) {
   .booking-cards {
     flex-direction: row-reverse;
@@ -788,5 +778,15 @@ body {
     opacity: 1;
     visibility: visible;
     translate: 0 -5.25%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::after,
+  *::before {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
   }
 }
