@@ -48,13 +48,17 @@ Los usuarios deberían poder:
 
 ### Lo que aprendí
 
-Aprendí a como utilizar el atributo inert en el html para ocultar elementos del teclado y herramientas como lectores de pantalla.
-Aprendí a como copiar texto desde JavaScript utilizando la API clipboard del navegador.
-Descubrí una forma de alertar a las herramientas de accesibilidad sobre un cambio, utilizando el `role="status"`
+Aprendí a como utilizar el atributo inert en el html para ocultar elementos del teclado y herramientas como lectores de pantalla, lo cual me resultó bastante útil al momento de ocultar el menú en movil.
+
+También aprendí a como copiar texto desde JavaScript utilizando la API clipboard del navegador; como ya había manejado con anterioridad el asincronismo utilizando `async - await`, me resultó bastante untuitiva de implementar.
+
+Descubrí una forma de alertar a las herramientas de accesibilidad sobre un cambio, por medio de `role="status"`.
 
 ### Desarrollo continuo
 
-Espero poder seguir aprendiendo más sobre el desarrollo web.
+Me gustaría seguir aprendiendo y reforzando mis conocimientos en HTML, CSS y JavaScript.
+
+Una vez sienta que he interiorizado las bases, seguiré con el manejo de información dinámica con JSON y otras herramientas.
 
 ### Recursos útiles
 
@@ -66,3 +70,7 @@ Espero poder seguir aprendiendo más sobre el desarrollo web.
 ## 🤓 Autor
 
 - Frontend Mentor - [Angel López](https://www.frontendmentor.io/profile/angeldavid04)
+
+## ♥️ Agradecimientos
+
+Le quiero dar un agradecimiento a mis maestros del bachillerato y la universidad porque sin ellos no fuera quien soy ahora, JonMircha por ser un gran docente digital y por enseñarme los fundamentos del maravilloso mundo del desarrollo web, Lucas Dalto por ofrecerme muy buenos cursos para aprender y repasar.
