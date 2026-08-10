@@ -50,7 +50,7 @@ Los usuarios deberían poder:
 
 Aprendí a como utilizar el atributo inert en el html para ocultar elementos del teclado y herramientas como lectores de pantalla, lo cual me resultó bastante útil al momento de ocultar el menú en movil.
 
-También aprendí a como copiar texto desde JavaScript utilizando la API clipboard del navegador; como ya había manejado con anterioridad el asincronismo utilizando `async - await`, me resultó bastante untuitiva de implementar.
+También aprendí a como copiar texto desde JavaScript utilizando la API clipboard del navegador; como ya había manejado con anterioridad el asincronismo utilizando `async - await`, me resultó bastante intuitiva de implementar.
 
 Descubrí una forma de alertar a las herramientas de accesibilidad sobre un cambio, por medio de `role="status"`.
 
