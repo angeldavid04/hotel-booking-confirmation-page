@@ -59,15 +59,15 @@
 :root {
   /* COLORS */
   /* Neutral */
-  --neutral900: hsl(33, 15%, 15%);
-  --neutral800: hsl(33, 22%, 20%);
-  --neutral700: hsl(32, 20%, 29%);
-  --neutral600: hsl(33, 17%, 41%);
-  --neutral400: hsl(36, 22%, 86%);
-  --neutral200: hsl(30, 24%, 93%);
-  --neutral100: hsl(35, 60%, 96%);
-  --neutral50: hsl(40, 60%, 98%);
-  --neutral0: hsl(0, 0%, 100%);
+  --neutral900: hsl(33deg, 15%, 15%);
+  --neutral800: hsl(33deg, 22%, 20%);
+  --neutral700: hsl(32deg, 20%, 29%);
+  --neutral600: hsl(33deg, 17%, 41%);
+  --neutral400: hsl(36deg, 22%, 86%);
+  --neutral200: hsl(30deg, 24%, 93%);
+  --neutral100: hsl(35deg, 60%, 96%);
+  --neutral50: hsl(40deg, 60%, 98%);
+  --neutral0: hsl(0deg, 0%, 100%);
   /* Sun */
   --sun500: hsl(42deg, 83%, 58%);
   --sun300: hsl(44deg, 84%, 75%);
