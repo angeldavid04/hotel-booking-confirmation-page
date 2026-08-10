@@ -671,7 +671,7 @@ body {
     var(--blue500),
     color-mix(in srgb, var(--blue500) 85%, transparent)
   );
-  position: fixed;
+  position: sticky;
   bottom: 0;
   right: 0;
   padding-inline: 2rem;
@@ -725,7 +725,7 @@ body {
   .sidebar {
     translate: 0;
     max-width: 20rem;
-    position: fixed;
+    position: static;
     border-right: 1px solid var(--neutral400);
   }
 
