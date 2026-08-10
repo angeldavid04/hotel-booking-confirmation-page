@@ -99,6 +99,10 @@ body {
   font-size: 0.9rem;
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
+
+  &:has(.sidebar[data-state="active"]) {
+    overflow: hidden;
+  }
 }
 
 :focus-visible {
@@ -255,10 +259,6 @@ body {
   translate: 0 0;
 }
 
-body:has(.sidebar[data-state="active"]) {
-  overflow: hidden;
-}
-
 .sidebar__footer {
   border-top: 1px dashed var(--neutral400);
   padding-block: 1rem;
@@ -291,9 +291,10 @@ body:has(.sidebar[data-state="active"]) {
   align-items: center;
   padding-block: 0.75rem;
   padding-inline: 1rem;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.menu__link[data-state="current"] {
+.menu__link:is([data-state="current"], :hover) {
   background-color: var(--neutral0);
   box-shadow: 0 0 1px 0 color-mix(in srgb, var(--neutral900) 20%, transparent);
   border-radius: 6px;
