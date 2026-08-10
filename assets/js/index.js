@@ -1,3 +1,5 @@
+"use strict";
+
 const $menuBtn = document.querySelector(".header__btn");
 const $btnImage = $menuBtn.querySelector(".header__img");
 const $menu = document.querySelector(".sidebar");
