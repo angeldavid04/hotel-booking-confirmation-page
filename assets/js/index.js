@@ -3,6 +3,10 @@ const $btnImage = $menuBtn.querySelector(".header__img");
 const $menu = document.querySelector(".sidebar");
 const $password = document.getElementById("password");
 const $passwordBtn = document.getElementById("password-btn");
+const $toast = document.querySelector(".toast");
+
+const PASSWORD_MESSAGE = "¡Wifi password copied successfully!";
+const PASSWORD_ERROR = "Error copying the password; please try again.";
 
 const MENU_STATES = Object.freeze({
   ACTIVE: "active",
@@ -34,10 +38,19 @@ async function copyPassword() {
 
   try {
     await navigator.clipboard.writeText(password);
-    console.log("contenido copiado al portapapeles");
+    showToast(PASSWORD_MESSAGE);
   } catch (err) {
-    console.error("Error copying the password");
+    showToast(PASSWORD_ERROR);
   }
+}
+
+function showToast(message) {
+  $toast.querySelector("p").textContent = message;
+  $toast.setAttribute("data-state", "active");
+
+  setTimeout(() => {
+    $toast.setAttribute("data-state", "hidden");
+  }, 2000);
 }
 
 $menuBtn.addEventListener("click", toggleMenu);
