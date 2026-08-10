@@ -258,8 +258,8 @@ body {
   flex-direction: column;
   padding-inline: 1rem;
   padding-block: 1rem;
-  min-height: 94vh;
-  position: absolute;
+  min-height: calc(100% - 4.6875rem);
+  position: fixed;
   z-index: 4;
   top: 4.6875rem;
   left: 0;
@@ -595,7 +595,6 @@ body {
   flex: 1;
   padding-block: 1rem;
   padding-inline: 1.25rem;
-  max-width: 24rem;
 }
 
 .info[data-variant="arrival"] {
@@ -709,6 +708,10 @@ body {
   .booking-cards {
     flex-direction: row-reverse;
   }
+
+  .info {
+    max-width: 24rem;
+  }
 }
 
 @media (width >= 68rem) {
@@ -724,7 +727,6 @@ body {
   .sidebar {
     translate: 0;
     max-width: 20rem;
-    position: static;
     border-right: 1px solid var(--neutral400);
   }
 
