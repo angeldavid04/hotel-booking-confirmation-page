@@ -5,7 +5,7 @@ const $password = document.getElementById("password");
 const $passwordBtn = document.getElementById("password-btn");
 const $toast = document.querySelector(".toast");
 
-const PASSWORD_MESSAGE = "¡Wifi password copied successfully!";
+const PASSWORD_MESSAGE = "Wifi password copied successfully!";
 const PASSWORD_ERROR = "Error copying the password; please try again.";
 
 const MENU_STATES = Object.freeze({
