@@ -1,4 +1,4 @@
-# 💷 Frontend Mentor - Solución del reto Hotel booking confirmation page
+# 🏨 Frontend Mentor - Solución del reto Hotel booking confirmation page
 
 Esta es mi solución al reto [Hotel booking confirmation page de Frontend Mentor](https://www.frontendmentor.io/challenges/hotel-booking-confirmation-page).
 
