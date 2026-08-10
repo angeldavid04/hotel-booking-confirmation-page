@@ -5,10 +5,11 @@ const $password = document.getElementById("password");
 const $passwordBtn = document.getElementById("password-btn");
 const $toast = document.querySelector(".toast");
 
+const DESKTOP_QUERY = window.matchMedia("(width >= 68rem)");
 const PASSWORD_MESSAGE = "Wifi password copied successfully!";
 const PASSWORD_ERROR = "Error copying the password; please try again.";
 
-const MENU_STATES = Object.freeze({
+const UI_STATES = Object.freeze({
   ACTIVE: "active",
   HIDDEN: "hidden"
 });
@@ -19,20 +20,22 @@ const BTN_ICONS = Object.freeze({
 
 function closeMenu() {
   $btnImage.setAttribute("src", BTN_ICONS.OPEN);
-  $menu.setAttribute("data-state", MENU_STATES.HIDDEN);
+  $menu.setAttribute("data-state", UI_STATES.HIDDEN);
   $menuBtn.setAttribute("aria-expanded", "false");
   $menu.setAttribute("aria-hidden", "true");
+  $menu.setAttribute("inert", "");
 }
 
 function openMenu() {
   $btnImage.setAttribute("src", BTN_ICONS.CLOSE);
-  $menu.setAttribute("data-state", MENU_STATES.ACTIVE);
+  $menu.setAttribute("data-state", UI_STATES.ACTIVE);
   $menuBtn.setAttribute("aria-expanded", "true");
   $menu.setAttribute("aria-hidden", "false");
+  $menu.removeAttribute("inert");
 }
 
 function toggleMenu() {
-  const isActive = $menu.getAttribute("data-state") === MENU_STATES.ACTIVE;
+  const isActive = $menu.getAttribute("data-state") === UI_STATES.ACTIVE;
 
   if (isActive) {
     closeMenu();
@@ -62,23 +65,20 @@ function showToast(message) {
 }
 
 function cleanAria() {
-  const desktopQuery = "(width >= 68rem)";
-
-  if (window.matchMedia(desktopQuery).matches) {
+  if (DESKTOP_QUERY.matches) {
     // Desktop
     $menuBtn.removeAttribute("aria-expanded");
     $menu.removeAttribute("aria-hidden");
     $menu.removeAttribute("data-state");
+    $menu.removeAttribute("inert");
     return;
   }
 
   // Mobile
-  $menuBtn.setAttribute("aria-expanded", "false");
-  $menu.setAttribute("aria-hidden", "true");
-  $menu.setAttribute("data-state", "hidden");
+  closeMenu();
 }
 
 $menuBtn.addEventListener("click", toggleMenu);
 $passwordBtn.addEventListener("click", copyPassword);
-window.addEventListener("resize", cleanAria);
+DESKTOP_QUERY.addEventListener("change", cleanAria);
 document.addEventListener("DOMContentLoaded", cleanAria);
