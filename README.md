@@ -33,8 +33,8 @@ Los usuarios deberían poder:
 
 ### Enlaces
 
-- URL de la solución:
-- URL del sitio en vivo:
+- [URL de la solución](https://github.com/angeldavid04/hotel-booking-confirmation-page)
+- [URL del sitio en vivo](https://angeldavid04.github.io/hotel-booking-confirmation-page)
 
 ## 💪 Mi proceso
 
