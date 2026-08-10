@@ -557,7 +557,7 @@ body {
 }
 
 .ticket__price {
-  font-family: "DM Mono";
+  font-family: "DM Mono", sans-serif;
 }
 
 .ticket__footer {
