@@ -403,7 +403,6 @@ body {
   position: absolute;
   display: none;
   bottom: 0;
-  cursor: pointer;
 
   &::before,
   &::after {
@@ -425,23 +424,6 @@ body {
     visibility 0.4s ease-in-out,
     translate 0.4s ease-in-out;
 }
-
-.booking-cards__fan:hover ~ .note {
-  translate: 20%;
-  rotate: -4deg;
-}
-
-.booking-cards__fan:hover ~ .ticket {
-  translate: -20%;
-  rotate: 4deg;
-}
-
-.booking-cards__fan:hover ~ .booking-cards__ilustration {
-  opacity: 1;
-  visibility: visible;
-  translate: 0 -5.25%;
-}
-
 /* ----- NOTE ----- */
 .note {
   background: linear-gradient(
@@ -727,10 +709,6 @@ body {
   .booking-cards {
     flex-direction: row-reverse;
   }
-
-  .booking-cards__fan {
-    display: flex;
-  }
 }
 
 @media (width >= 68rem) {
@@ -773,5 +751,29 @@ body {
 
   .header__btn {
     display: none;
+  }
+
+  .booking-cards__fan {
+    display: flex;
+  }
+
+  .booking-cards {
+    cursor: pointer;
+  }
+
+  .booking-cards:hover .note {
+    translate: 20%;
+    rotate: -4deg;
+  }
+
+  .booking-cards:hover .ticket {
+    translate: -20%;
+    rotate: 4deg;
+  }
+
+  .booking-cards:hover .booking-cards__ilustration {
+    opacity: 1;
+    visibility: visible;
+    translate: 0 -5.25%;
   }
 }
