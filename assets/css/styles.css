@@ -667,8 +667,8 @@ body {
 .toast {
   background: linear-gradient(
     to left bottom,
-    var(--terracotta400),
-    var(--terracotta700)
+    var(--blue500),
+    color-mix(in srgb, var(--blue500) 85%, transparent)
   );
   position: fixed;
   bottom: 0;
