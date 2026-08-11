@@ -95,6 +95,15 @@
   /* ANIMATIONS */
   --anim-duration-normal: 0.3s;
   --anim-duration-medium: 0.4s;
+  /* TYPOGRAPHY */
+  --fs-2xs: 0.625rem;
+  --fs-xs: 0.725rem;
+  --fs-sm: 0.785rem;
+  --fs-md: clamp(0.825rem, 0.25rem + 0.25vw, 0.9rem);
+  --fs-l: clamp(1rem, 0.5rem + 0.5vw, 1.5rem);
+  --fs-lg: clamp(1.25rem, 0.75rem + 0.75vw, 2.25rem);
+  --fs-xl: clamp(2.25rem, 1rem + 0.75vw, 2.5rem);
+  --fs-2xl: clamp(2.5rem, 1rem + 1.25vw, 3rem);
 }
 
 /* ----- RESET ----- */
@@ -110,7 +119,7 @@
 body {
   background-color: var(--neutral100);
   color: var(--neutral900);
-  font-size: 0.9rem;
+  font-size: var(--fs-md);
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
 
@@ -124,13 +133,18 @@ body {
   outline-offset: 0.5ch;
 }
 
+/* ----- COMPOSITION ----- */
+.allow-shrink > * {
+  min-width: 0;
+}
+
 /* ----- UTILITIES ----- */
 .tiny {
-  font-size: 0.725rem;
+  font-size: var(--fs-xs);
 }
 
 .small {
-  font-size: 0.785rem;
+  font-size: var(--fs-sm);
 }
 
 .upper {
@@ -198,7 +212,7 @@ body {
 .btn[data-variant="compact"] {
   padding-block: 0.25em;
   padding-inline: 0.5em;
-  font-size: 0.625rem;
+  font-size: var(--fs-2xs);
   width: fit-content;
   border-color: var(--neutral400);
 
@@ -210,8 +224,8 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  padding-inline: 1.75rem;
-  padding-block: 2rem;
+  padding-inline: clamp(1rem, 0.75rem + 1vw, 1.75rem);
+  padding-block: clamp(1.25rem, 0.75rem + 1vw, 2rem);
   border-radius: 16px;
 }
 
@@ -316,7 +330,7 @@ body {
 
 .menu__marker {
   width: 1rem;
-  font-size: 0.75em;
+  font-size: var(--fs-2xs);
   font-family: "Fraunces", sans-serif;
   font-weight: 400;
   aspect-ratio: 1 / 1;
@@ -348,7 +362,7 @@ body {
 .weather__weather {
   font-family: "Fraunces", sans-serif;
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: var(--fs-2xl);
 }
 
 .weather__sun {
@@ -377,7 +391,7 @@ body {
 
 .booking__title {
   font-family: "Fraunces", sans-serif;
-  font-size: 2.25rem;
+  font-size: var(--fs-xl);
 }
 
 .booking__strong {
@@ -402,11 +416,10 @@ body {
   justify-content: center;
   gap: 1.25rem;
   position: relative;
-  overflow-x: hidden;
 }
 
 .booking-cards__card {
-  max-width: 22rem;
+  width: min(22rem, 100%);
   transition:
     translate var(--anim-duration-normal) ease-in-out,
     rotate var(--anim-duration-normal) ease-in-out;
@@ -470,6 +483,7 @@ body {
 .note__title {
   font-style: italic;
   font-family: "Fraunces", sans-serif;
+  font-size: var(--fs-lg);
   margin-block: 0 2rem;
 }
 
@@ -479,7 +493,7 @@ body {
 }
 
 .note__strong {
-  font-size: 2.5rem;
+  font-size: var(--fs-2xl);
 }
 
 .note__description {
@@ -492,7 +506,7 @@ body {
 }
 
 .note__end-text {
-  font-size: 1.25rem;
+  font-size: var(--fs-lg);
   font-family: "Fraunces", sans-serif;
 }
 
@@ -549,7 +563,7 @@ body {
 
 .ticket__month {
   margin-block: 0 0.25rem;
-  font-size: 2.25rem;
+  font-size: var(--fs-xl);
   font-family: "Fraunces", sans-serif;
 }
 
@@ -578,7 +592,7 @@ body {
 
 .ticket__total {
   font-family: "Fraunces", sans-serif;
-  font-size: 1.5rem;
+  font-size: var(--fs-lg);
 }
 
 /* ----- INFO CARDS ----- */
@@ -595,6 +609,7 @@ body {
   flex: 1;
   padding-block: 1rem;
   padding-inline: 1.25rem;
+  min-width: auto;
 }
 
 .info[data-variant="arrival"] {
@@ -619,7 +634,7 @@ body {
 
 .info__badge {
   background-color: currentColor;
-  width: 2.25rem;
+  width: var(--fs-xl);
   aspect-ratio: 1 / 1;
   display: grid;
   place-content: center;
@@ -638,7 +653,7 @@ body {
 
 .info__number {
   color: currentColor;
-  font-size: 1.5rem;
+  font-size: var(--fs-lg);
   font-family: "Fraunces", sans-serif;
 }
 
