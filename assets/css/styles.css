@@ -766,7 +766,7 @@ body {
 
   .note,
   .ticket {
-    min-width: 25rem;
+    min-width: 24rem;
   }
 
   .note {
