@@ -169,6 +169,11 @@ body {
   padding-block: 1.25rem;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .grid {
   display: grid;
   align-items: start;
@@ -728,7 +733,7 @@ body {
   }
 }
 
-@media (width >= 68rem) {
+@media (width >= 74rem) {
   .header {
     border-bottom: none;
     border-right: 1px solid var(--neutral400);
@@ -761,8 +766,7 @@ body {
 
   .note,
   .ticket {
-    max-width: 25rem;
-    flex: 1;
+    min-width: 25rem;
   }
 
   .note {
@@ -785,6 +789,8 @@ body {
 
   .booking-cards {
     cursor: pointer;
+    width: min-content;
+    flex-wrap: nowrap;
   }
 
   .booking-cards:hover .note {
