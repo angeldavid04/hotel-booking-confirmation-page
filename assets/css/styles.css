@@ -133,12 +133,11 @@ body {
   outline-offset: 0.5ch;
 }
 
-/* ----- COMPOSITION ----- */
+/* ----- UTILITIES ----- */
 .allow-shrink > * {
   min-width: 0;
 }
 
-/* ----- UTILITIES ----- */
 .tiny {
   font-size: var(--fs-xs);
 }
