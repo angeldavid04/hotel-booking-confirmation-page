@@ -699,8 +699,8 @@ body {
     color-mix(in srgb, var(--blue500) 85%, transparent)
   );
   position: sticky;
-  bottom: 0;
-  right: 0;
+  bottom: 1vh;
+  left: 100vw;
   color: var(--neutral0);
   display: inline-flex;
   align-items: center;
