@@ -683,6 +683,7 @@ body {
   padding-inline: 0.5rem;
   padding-block: 0.5rem;
   border-radius: 6px;
+  gap: 1rem;
 }
 
 .info__password {
