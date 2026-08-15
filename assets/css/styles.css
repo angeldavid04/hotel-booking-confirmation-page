@@ -276,7 +276,7 @@ body {
   flex-direction: column;
   padding-inline: 1rem;
   padding-block: 1rem;
-  min-height: calc(100% - 4.6875rem);
+  min-height: calc(100vh - 4.6875rem);
   position: fixed;
   z-index: 4;
   top: 4.6875rem;
