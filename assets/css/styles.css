@@ -104,6 +104,8 @@
   --fs-lg: clamp(1.25rem, 0.75rem + 0.75vw, 2.25rem);
   --fs-xl: clamp(2.25rem, 1rem + 0.75vw, 2.5rem);
   --fs-2xl: clamp(2.5rem, 1rem + 1.25vw, 3rem);
+  /* STRUCTURE */
+  --header-height: 4.6875rem;
 }
 
 /* ----- RESET ----- */
@@ -251,6 +253,7 @@ body {
   top: 0;
   z-index: 5;
   background-color: var(--neutral100);
+  min-height: var(--header-height);
 }
 
 .header__img {
@@ -276,7 +279,7 @@ body {
   flex-direction: column;
   padding-inline: 1rem;
   padding-block: 1rem;
-  min-height: calc(100vh - 4.6875rem);
+  min-height: calc(100vh - var(--header-height));
   position: fixed;
   z-index: 4;
   top: 4.6875rem;
