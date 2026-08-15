@@ -332,7 +332,8 @@ body {
   padding-inline: 1rem;
   transition: background-color var(--anim-duration-normal) ease-in-out;
 
-  &:is([data-state="current"], :hover) {
+  &[data-state="current"],
+  &:hover {
     background-color: var(--neutral0);
     box-shadow: var(--current-link-shadow);
     border-radius: 6px;
